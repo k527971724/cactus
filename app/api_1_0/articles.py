@@ -5,7 +5,7 @@ from . import api
 
 # 【一篇文章】
 @api.route('/articles/<int:id>')
-def get_article():
+def get_article(id):
     article = Article.query.get_or_404(id)
     article01 = Article.query.get_or_404(article.recommend01)
     article02 = Article.query.get_or_404(article.recommend02)
