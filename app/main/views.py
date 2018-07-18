@@ -10,8 +10,8 @@ def index():
     return render_template('index/index.html')
 
 
-# 【主页】
-@main.route('/single_post')
+# 【一篇文章】
+@main.route('/single_post/<int:id>')
 def single_post():
     return render_template('index/single-post.html')
 
