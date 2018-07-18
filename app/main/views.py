@@ -10,6 +10,12 @@ def index():
     return render_template('index/index.html')
 
 
+# 【主页】
+@main.route('/single_post')
+def index():
+    return render_template('index/single-post.html')
+
+
 # 【科技页面】
 @main.route('/technology')
 def technology():

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh-hans-cn">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>仙人掌指南|让未来生活触手可及|阅读页</title>
+		
+        <meta name="description" content="description">
+        <!-- 动态菜单
+		================================================== -->
+		 <meta name="Author" content="Rin">
+		 <link rel="stylesheet" href="static/front/css/asidenav.css">
+		<!-- Mobile Specific Meta
+		================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="static/front/img/favicon.png" />
+		
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="static/front/css/font-awesome.min.css">
+		<!-- bootstrap.min css -->
+        <link rel="stylesheet" href="static/front/css/bootstrap.min.css">
+		<!-- Animate.css -->
+        <link rel="stylesheet" href="static/front/css/animate.css">
+		<!-- Owl Carousel -->
+        <link rel="stylesheet" href="static/front/css/owl.carousel.css">		
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="static/front/css/main.css">
+		<!-- Media Queries -->
+        <link rel="stylesheet" href="static/front/css/responsive.css">
+
+		<!--
+		Google Font
+		=========================== -->                    
+		
+		<!-- Titillium Web -->
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,200' rel='stylesheet' type='text/css'>
+		<!-- Source Sans Pro -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+		<!-- Oswald -->
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<!-- Raleway -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		
+		<!-- Modernizer Script for old Browsers -->
+        <script src="static/front/jquery.min.js"></script>
+        <!-- 动态菜单 -->
+        
+       <!--
+		ajax
+		=========================== -->
+		<!-- <script type="text/javascript">
+		$(document).ready(function(){
+  			$("#btn1").click(function(){
+    			$.getJSON("/ajax",function(result){
+     			 $.each(result, function(i, n){
+       				 $("#change1").append(n+ " ");
+       				 
+     			 });
+   			    });
+ 	 	       });
+	          //});
+         </script> -->
+		<script type="text/javascript">
+		
+	function ajaxroll(a){
+		$(document).ready(function(){
+  			$.getJSON(a,function(data){
+ 					$.each(data, function(infoIndex1, info1) {
+
+             				$("#change2").append(info1.title6 + " ");
+             				$("#title").append(info1.title + " ");
+             				//$("#id1").attr("href",info1.id1);
+             				$("#id1").append(info1.title1 + " ");
+             				//$("#id2").attr("href",info1.id2);
+             				$("#id2").append(info1.title2 + " ");
+             				//$("#id3").attr("href",info1.id3);
+             				$("#id3").append(info1.title3 + " ");
+             				//$("#id4").attr("href",info1.id4);
+             				$("#id4").append(info1.title4 + " ");
+             				//$("#id5").attr("href",info1.id5);
+             				$("#id5").append(info1.title5 + " ");
+             				//$("#id6").attr("href","/articles/"+info1.id6);
+             				$("#id6").append(info1.title6 + " ");
+                	       
+                	        $("#change1").append(info1.id1 + "");   
+
+            		});
+            
+        
+         		});
+    		});			 
+        }
+        
+
+	var newurl="/articles";
+	ajaxroll(newurl);
+	var ab=document.getElementById("change1").innerHTML;
+	ajaxroll(ab);
+	$("#id1").click(function(){
+		ajaxroll(ab);
+	});
+         </script>
+		
+
+       <!--防盗链-->
+      <script type="text/javascript">
+          function showImg(url) {
+              var frameid = 'frameimg' + Math.random();
+              window.img = '<img id="img" src=\'' + url + '?' + Math.random() + '\' /><script>window.onload = function() { parent.document.getElementById(\'' + frameid + '\').height = document.getElementById(\'img\').height+\'px\'; }<' + '/script>';
+              document.write('<iframe id="' + frameid + '" frameBorder="0" scrolling="no" width="100%" src="javascript:parent.img;"> <img src="javascript:parent.img;" class="img-responsive"></iframe>');
+           }
+       </script>
+
+		
+  			
+    			
+		
+
+    </head>
+	
+    <body class="blog-page">
+	  
+        <!--
+          下面开始动态菜单
+        ==================================== -->
+   <div>
+    <svg width="0" height="0">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <div class="aside-nav bounceInUp animated" id="aside-nav">
+        <label for="" class="aside-menu" title="按住拖动">发现</label>
+
+        <button  id=id1 class="menu-item menu-first"></button>
+        <button id=id2 class="menu-item menu-line menu-sixth"></button>
+        <button id=id3 class="menu-item menu-line menu-fifth"></button>
+        <button id=id4 class="menu-item menu-line menu-fourth"></button>
+        <button id=id5 class="menu-item menu-third"></button>
+        <button id=id6 class="menu-item menu-second"></button>
+        
+        
+        
+        
+</div>    
+<script src="static/front/js/asidenav.js"></script>       
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+						<h1 id="logo">
+							<img src="static/front/img/logo-cactus.png" alt="Meghna" />
+						</h1>
+					</a>
+                </div>
+
+                <nav class="collapse navbar-collapse navbar-right" >
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#showcase1">科技</a></li>
+                        <li><a href="#showcase2">设计</a></li>
+                        <li><a href="#blog1">创意</a></li>
+                        <li> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </li>
+                        <li><a href="#blog">好物</a></li>
+                        <li><a href="#services">创业支持</a></li>
+                        <li><a href="#our-team">创业团队</a></li>
+                        
+                        
+                        <li> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </li>
+                        <li><a href="#pricing">头像</a></li>
+                        
+                        <li><a href="#contact-us">通知</a></li>
+                        <li><a href="#services">收藏</a></li>
+                    </ul>
+
+                </nav><!-- /.navbar-collapse -->
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+        
+        
+        <!-- Start Blog Banner
+        ==================================== -->
+        <section id="blog-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-16 text-center">
+                       
+                        <div class="blog-icon">
+                            <i class="fa fa-book fa-4x"></i>
+                        </div>
+                        <div class="blog-title">
+                            <h1 id=title></h1>
+                        </div>
+                        
+					</div>     <!-- End col-lg-12 -->
+				</div>	    <!-- End row -->
+			</div>       <!-- End container -->
+		</section>    <!-- End Section -->
+        
+        
+        <!-- Start Blog Post Section
+        ==================================== -->
+        <section id="blog-page">
+            <div class="container">
+                <div class="row">
+                   
+                    <div id="blog-posts" class="col-md-8 col-sm-8"><!--这里修改文本框的大小  -->
+                        <div class="post-item">
+                           
+                           <!-- Single Post -->
+                            <article class="entry wow fadeInDown"  data-wow-duration="1000ms" data-wow-delay="300ms">                               
+                                
+								<div class="post-excerpt">
+									
+
+<button id="test"></button>
+<div id="change1">
+
+</div>
+
+ <div id="change2">
+
+</div>
+<div><blockquote><p>本周早些时候，小米在微博上宣布，将在深圳发布新产品，不少业界人士认为这应该是要发布小米8周年纪念版，果然今日在网络上就曝光了一张小米新旗舰手机包装盒的照片。</span></p><p><div><script type="text/javascript">showImg("https://mmbiz.qpic.cn/mmbiz_jpg/nOuia1Cibj2uQYgh4IyQCSnh4PStZ6wtS4WoJcy0tEr57DCapjbicAZEVrBl890KcrYMtdicGibwHQvqthLNnaW4oaw/640")</script></div></p><p><span>照片中新机的包装盒以黑色作为背景色，盒子上面有一个硕大的数字“8”，右上角是“MI”logo，该包装盒设计十分简约，并没有出现“8周年纪念版”字样，所以新机很可能直接被命名为小米8。</span></p><p>
+<div><script type="text/javascript">showImg("https://mmbiz.qpic.cn/mmbiz_jpg/nOuia1Cibj2uQYgh4IyQCSnh4PStZ6wtS4Jibszia2tGfhzZsNBtY2iaK9gue66pZJA9hP9qq89O0RECoxLeB5Cib0aw/640")</script></div></p><p ><span>此前爆料的信息显示，小米8采用刘海屏，并且刘海长度与iPhone X接近，这是因为内置了3D结构光模块，支持人脸识别，此前曝光的小米8刘海内部构造图片显示，该机刘海区域元件数量颇多，有点阵投射，红外发射和前置摄像头等等。传闻小米8后置双摄继续保持竖排设计，此外还将加入屏下指纹。</span></p><p><div><script type="text/javascript">showImg("https://mmbiz.qpic.cn/mmbiz_jpg/nOuia1Cibj2uRCuCVG3A2dOrVGcm8yGnN30ssLXF1iaYDok7Uic3OyGcMJwDuB40eRrJZXcvgc6uRswfYPlqIRH36A/640")</script></div></p><p><span>其他方面，小米8不出意外的话会标配高通骁龙845处理器，最高8GB运行内存。有消息称该机将于5月31日发布。现在小米7渐渐没了消息，或许小米新旗舰就只有小米8了。</span></p><p><br/></p><p><span><strong>真的没小米7了？</strong></span></p><section><hr/><p ><br/></p></section></blockquote></div>
+
+								</div>
+                               
+								<div class="post-meta">
+									<span class="post-date">
+										<i class="fa fa-calendar"></i>2018/7/17
+									</span>
+									<span class="comments">
+										<i class="fa fa-comments"></i>18个讨论
+									</span>
+									<span class="post-view">
+										<i class="fa fa-eye"></i>265次浏览
+									</span>
+									
+								</div>
+                            </article>
+                            <!-- End Single Post -->
+							
+                            <div class="next-prev clearfix">
+                                <a href="" class="prev-post">
+                                    <i class="fa fa-angle-left fa-2x"></i>上一篇文章
+                                </a>
+                                <a href="" class="next-post pull-right">
+                                    下一篇文章<i class="fa fa-angle-right fa-2x"></i>
+                                </a>
+                            </div>
+                           
+                            
+                            <div id="comments" class="comments-section">
+                                <h4>4个讨论</h4>
+                                <ol class="comment-list">
+                                    <li id="comment-1">
+                                        <div class="comment-wrap">
+                                            <div class="author-avatar pull-left">
+                                                <img src="static/front/img/blog/user.jpg" alt="">
+                                            </div>
+                                            <div class="author-comment">
+                                                <cite class="pull-left"><a href="#">小明</a></cite>
+                                                <a href="" class="replay pull-right">回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复</a>
+                                                <div style="clear:both"></div>
+                                                <div class="comment-meta">
+                                                    <i class="fa fa-calendar"></i> 26 aug 2018 at 07:30 PM 
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <p>讨论内容</p>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li id="comment-2">
+                                                <div class="comment-wrap">
+                                                    <div class="author-avatar pull-left">
+                                                        <img src="static/front/img/blog/user.jpg" alt="">
+                                                    </div>
+                                                    <div class="author-comment">
+                                                        <cite class="pull-left"><a href="#">小明</a></cite>
+                                                        <a href="" class="replay pull-right">回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复</a>
+                                                        <div style="clear:both"></div>
+                                                        <div class="comment-meta">
+                                                            <i class="fa fa-calendar"></i> 26 aug 2018 at 07:30 PM 
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <p>回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="comment-3">
+                                                <div class="comment-wrap">
+                                                    <div class="author-avatar pull-left">
+                                                        <img src="static/front/img/blog/user.jpg" alt="">
+                                                    </div>
+                                                    <div class="author-comment">
+                                                        <cite class="pull-left"><a href="#">小明</a></cite>
+                                                        <a href="" class="replay pull-right">回复</a>
+                                                        <div style="clear:both"></div>
+                                                        <div class="comment-meta">
+                                                            <i class="fa fa-calendar"></i> 26 aug 2018 at 07:30 PM 
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <p>回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="comment-wrap">
+                                            <div class="author-avatar pull-left">
+                                                <img src="static/front/img/blog/user.jpg" alt="">
+                                            </div>
+                                            <div class="author-comment">
+                                                <cite class="pull-left"><a href="#">小明n</a></cite>
+                                                <a href="" class="replay pull-right">回复</a>
+                                                <div style="clear:both"></div>
+                                                <div class="comment-meta">
+                                                    <i class="fa fa-calendar"></i> 26 aug 2018 at 07:30 PM 
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <p>回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                            
+                            
+                            <!-- End Single Post -->
+
+                        </div>
+                    </div>
+                    
+                    <!-- Widget Section -->
+                    <div id="right-sidebar" class="col-md-4 col-sm-4">
+                       
+                       <!-- Single Widget -->
+                        <aside class="widget wow fadeInUp"  data-wow-duration="1000ms">
+							<div class="widget-title">
+                               <h3>搜索文章</h3>
+							</div>
+                           <div class="widget-content">
+                                <form action="#" id="search-form" method="get" role="search">
+                                    <input type="text" class="form-control" placeholder="请输入关键词..." autocomplete="on" name="seach">
+                                    <button type="submit" title="Search" id="search-submit">
+										<i class="fa fa-search"></i>
+									</button>
+                                </form>
+                           </div>
+                        </aside>
+                        <!-- End Single Widget -->
+						
+                       <!-- Single Widget -->
+                        <aside class="widget wow fadeInDown">
+							<div class="widget-title">
+                               <h3>内测版本1.0</h3>
+							</div>
+							<div class="widget-content">
+                                <p>有诸多不足，目前只有文章推荐功能。<br>请多指教！ </p>
+							</div>
+                        </aside>
+                        <!-- End Single Widget -->
+                       
+                       <!-- Single Widget -->
+                        <aside class="widget wow fadeInDown">
+							<div class="widget-title">
+								<h3>大家都在看</h3>
+							</div>
+								
+							<div class="widget-content">
+								<!-- tab nav -->
+								<ul class="tab-post-nav clearfix">
+									<li class="active"><a href="#popular" data-toggle="tab">评分最高的文章</a></li>
+									<li><a href="#recent" data-toggle="tab">最新的文章</a></li>
+									<li><a href="#most-viewed" data-toggle="tab">最热的文章</a></li>
+								</ul>
+								<!-- /tab nav -->
+								
+								<!-- tab content -->
+								<div class="tab-content">
+									<article class="tab-pane active tab-post" id="popular">
+										<div class="clearfix">
+											<div class="tab-thumb">
+												<img src="static/front/img/blog/3D-beach-art.jpg" class="img-responsive" alt="3D Beach Art | Meghna">
+											</div>
+											<div class="tab-excerpt">
+												<h4><a href="single.html">标题</a></h4>
+												<span>November 15 2018</span>
+												<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+											</div>
+										</div>
+										<div class="clearfix">
+											<div class="tab-thumb">
+												<img src="static/front/img/blog/amazing-caves-coverimage.jpg" class="img-responsive" alt="amazing-caves-coverimage | Meghna">
+											</div>
+											<div class="tab-excerpt">
+												<h4><a href="single.html">标题</a></h4>
+												<span>November 15 2018</span>
+												<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+											</div>
+										</div>
+									</article>
+									
+									<article class="tab-pane tab-post" id="recent">
+										<div class="clearfix">
+											<div class="tab-thumb">
+												<img src="static/front/img/blog/amazing-caves-coverimage.jpg" class="img-responsive" alt="amazing-caves-coverimage | Meghna">
+											</div>
+											<div class="tab-excerpt">
+												<h4><a href="single.html">标题</a></h4>
+												<span>November 15 2018</span>
+												<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+											</div>
+										</div>
+										<div class="clearfix">
+											<div class="tab-thumb">
+												<img src="static/front/img/blog/3D-beach-art.jpg" class="img-responsive" alt="3D Beach Art | Meghna">
+											</div>
+											<div class="tab-excerpt">
+												<h4><a href="single.html">标题</a></h4>
+												<span>November 15 2018</span>
+												<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+											</div>
+										</div>
+									</article>	
+									
+									<article class="tab-pane tab-post" id="most-viewed">
+										<div class="clearfix">
+											<div class="tab-thumb">
+												<img src="static/front/img/blog/bicycle.jpg" class="img-responsive" alt="bicycle | Meghna">
+											</div>
+											<div class="tab-excerpt">
+												<h4><a href="single.html">标题</a></h4>
+												<span>November 15 2018</span>
+												<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+											</div>
+										</div>
+										<div class="clearfix">
+											<div class="tab-thumb">
+												<img src="static/front/img/blog/3D-beach-art.jpg" class="img-responsive" alt="3D Beach Art | Meghna">
+											</div>
+											<div class="tab-excerpt">
+												<h4><a href="single.html">标题</a></h4>
+												<span>November 15 2018</span>
+												<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+											</div>
+										</div>
+									</article>									
+									
+								</div>
+								<!-- /tab content -->
+								
+							</div>
+                        </aside>
+                        <!-- End Single Widget -->
+                       
+                       
+                       
+                      
+                       
+                       <!-- Single Widget -->
+                        <aside class="widget wow fadeInDown">
+							<div class="widget-title">
+                               <h3>添加你喜欢的标签</h3>
+							</div>
+							<div class="widget-content">
+                                <a class="tag" href="#">智能家居</a>
+                                <a class="tag" href="#">数码</a>
+                                <a class="tag" href="#">汽车</a>
+                                <a class="tag" href="#">大学生创业</a>
+                                <a class="tag" href="#">机器人</a>
+                                <a class="tag" href="#">女装</a>
+                                <a class="tag" href="#">运动装备</a>
+                                <a class="tag" href="#">文具</a>
+							</div>
+                        </aside>
+                        <!-- End Single Widget -->
+                        
+                    </div>
+                    <!-- End Widget Section -->
+
+				</div>	    <!-- End row -->
+			</div>       <!-- End container -->
+		</section>    <!-- End Section -->
+        
+
+		<!-- Start Footer Section
+		========================================== -->
+		<footer id="footer" class="bg-one">
+			<div class="container">
+			    <div class="row wow fadeInUp" data-wow-duration="500ms">
+					<div class="col-lg-16">
+						
+						
+
+						<!-- copyright -->
+						<div class="copyright text-center">
+							<img src="static/front/img/single-logo.png" alt="Meghna" /> <br />
+							<p>Copyright &copy; 2018. 使用条款和隐私条款。版权所有，保留一切权利。联系请致电仙人掌团队13631441971</p>
+						</div>
+						<!-- /copyright -->
+						
+					</div> <!-- end col lg 12 -->
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</footer> <!-- end footer -->
+		
+		<!-- Back to Top
+		============================== -->
+		<a href="#" id="scrollUp"><i class="fa fa-angle-up fa-2x"></i></a>
+		
+		<!-- end Footer Area
+		========================================== -->
+		
+		<!-- 
+		Essential Scripts
+		=====================================-->
+		
+		<!-- Main jQuery -->
+		<script src="static/front/js/jquery-1.11.0.min.js"></script>
+		<!-- Bootstrap 3.1 -->
+		<script src="static/front/js/bootstrap.min.js"></script>
+		<!-- Back to Top -->
+	
+		<script src="static/front/js/classie.js"></script>
+		<!-- Owl Carousel -->
+		<script src="static/front/js/owl.carousel.min.js"></script>
+		<!-- Custom Scrollbar -->
+		<script src="static/front/js/jquery.nicescroll.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="static/front/js/jquery.easing-1.3.pack.js"></script>
+		<!-- wow.min Script -->
+		<script src="static/front/js/wow.min.js"></script>
+		<!-- For video responsive -->
+		<script src="static/front/js/jquery.fitvids.js"></script>
+		<!-- Custom js -->
+		<script src="static/front/js/custom.js"></script>
+
+    </body>
+</html>
