@@ -7,7 +7,7 @@ from . import main  # 蓝本
 # 【主页】
 @main.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index/index.html')
 
 
 # 【科技页面】
