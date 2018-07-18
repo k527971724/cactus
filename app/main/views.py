@@ -23,6 +23,6 @@ def design():
 
 
 # 【人文页面】
-@main.route('/humanity')
+@main.route('/idea')
 def humanity():
-    return render_template('humanity.html')
+    return render_template('idea.html')
