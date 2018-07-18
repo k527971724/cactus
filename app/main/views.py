@@ -12,7 +12,7 @@ def index():
 
 # 【主页】
 @main.route('/single_post')
-def index():
+def single_post():
     return render_template('index/single-post.html')
 
 
