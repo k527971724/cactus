@@ -54,62 +54,7 @@
         <script src="static/front/jquery.min.js"></script>
         <!-- 动态菜单 -->
         
-       <!--
-		ajax
-		=========================== -->
-		<!-- <script type="text/javascript">
-		$(document).ready(function(){
-  			$("#btn1").click(function(){
-    			$.getJSON("/ajax",function(result){
-     			 $.each(result, function(i, n){
-       				 $("#change1").append(n+ " ");
-       				 
-     			 });
-   			    });
- 	 	       });
-	          //});
-         </script> -->
-		<script type="text/javascript">
-		
-	function ajaxroll(a){
-		$(document).ready(function(){
-  			$.getJSON(a,function(data){
- 					$.each(data, function(infoIndex1, info1) {
-
-             				$("#change2").append(info1.title6 + " ");
-             				$("#title").append(info1.title + " ");
-             				//$("#id1").attr("href",info1.id1);
-             				$("#id1").append(info1.title1 + " ");
-             				//$("#id2").attr("href",info1.id2);
-             				$("#id2").append(info1.title2 + " ");
-             				//$("#id3").attr("href",info1.id3);
-             				$("#id3").append(info1.title3 + " ");
-             				//$("#id4").attr("href",info1.id4);
-             				$("#id4").append(info1.title4 + " ");
-             				//$("#id5").attr("href",info1.id5);
-             				$("#id5").append(info1.title5 + " ");
-             				//$("#id6").attr("href","/articles/"+info1.id6);
-             				$("#id6").append(info1.title6 + " ");
-                	       
-                	        $("#change1").append(info1.id1 + "");   
-
-            		});
-            
-        
-         		});
-    		});			 
-        }
-        
-
-	var newurl="/articles";
-	ajaxroll(newurl);
-	var ab=document.getElementById("change1").innerHTML;
-	ajaxroll(ab);
-	$("#id1").click(function(){
-		ajaxroll(ab);
-	});
-         </script>
-		
+       
 
        <!--防盗链-->
       <script type="text/javascript">
@@ -120,9 +65,38 @@
            }
        </script>
 
+		<!--
+		ajax
+		=========================== -->
+		<script type="text/javascript">
+		$(document).ready(function(){
+  			$("#btn1").click(function(){
+    			$.getJSON("/ajax",function(result){
+     			 $.each(result, function(i, n){
+       				 $("#change1").append(n+ " ");
+       				 
+     			 });
+   			    });
+ 	 	       });
+	          //});
+         </script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+  			$("#btn2").click(function(){
+    			$.getJSON("/ajax",function(data){
+ 					$.each(data, function(infoIndex1, info1) {
+    				 //if(infoIndex1 == "b") {
+    				 	
+         
+           				
+             				$("#change2").append(info1.b + " ");
+                		});
+            });
+         				});
+    					 
+    });
+         </script>
 		
-  			
-    			
 		
 
     </head>
@@ -145,12 +119,12 @@
     <div class="aside-nav bounceInUp animated" id="aside-nav">
         <label for="" class="aside-menu" title="按住拖动">发现</label>
 
-        <button  id=id1 class="menu-item menu-first"></button>
-        <button id=id2 class="menu-item menu-line menu-sixth"></button>
-        <button id=id3 class="menu-item menu-line menu-fifth"></button>
-        <button id=id4 class="menu-item menu-line menu-fourth"></button>
-        <button id=id5 class="menu-item menu-third"></button>
-        <button id=id6 class="menu-item menu-second"></button>
+        <a href="http://www.w3school.com.cn/html/html5_migration.asp" title="标题一" class="menu-item menu-first">文章一</a>
+        <a href="javascript:void(0)" title="标题六" class="menu-item menu-line menu-sixth">文章二</a>
+        <a href="javascript:void(0)" title="标题五" class="menu-item menu-line menu-fifth">文章三</a>
+        <a href="javascript:void(0)" title="标题四" class="menu-item menu-line menu-fourth">文章四</a>
+        <a href="javascript:void(0)" title="标题三" class="menu-item menu-third">文章五</a>
+        <a href="javascript:void(0)" title="标题二" class="menu-item menu-second">文章六</a>
         
         
         
@@ -213,7 +187,7 @@
                             <i class="fa fa-book fa-4x"></i>
                         </div>
                         <div class="blog-title">
-                            <h1 id=title></h1>
+                            <h1>文章标题，应自动替换</h1>
                         </div>
                         
 					</div>     <!-- End col-lg-12 -->
@@ -236,11 +210,12 @@
                                 
 								<div class="post-excerpt">
 									
+<button  id="btn1"  type="button" style="color: blue">获得 JSON 数据1</button>
 
-<button id="test"></button>
-<div id="change1">
+ <div id="change1">
 
 </div>
+<button  id="btn2"  type="button" style="color: blue">获得 JSON 数据2</button>
 
  <div id="change2">
 
