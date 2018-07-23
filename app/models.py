@@ -1,6 +1,5 @@
-from flask import request, current_app, url_for
 from . import db
-from app.exceptions import ValidationError
+
 
 # 【文章】
 class Article(db.Model):
