@@ -1,7 +1,7 @@
 import json
 from app.models import Article
 with open("last_list_1.json", 'r') as f:
-    aa = json.load(f)  # 4500
+    aa = json.load(f)  # aa是一个有4500个元素的列表
     data = []
 
     for a in aa:
@@ -20,11 +20,15 @@ with open("last_list_1.json", 'r') as f:
         #print(tmp.id)
         data.append(tmp)
     #print("length" + str(len(data)))
-    d_1000 = data[:1000]
-    '''
+'''
     for d in data:
         print(str(d.id) + "  " + d.title)
-    print(data[1365].id, data[1365].title)
-    del data[1365]
-    print(data[1365].id, data[1365].title)
-    '''
+
+        #print(d.body)
+        #print(d.body_html)
+'''
+'''
+print(data[4498].title)
+print(data[4498].body)
+print(data[4498].body_html)
+'''

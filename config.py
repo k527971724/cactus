@@ -16,7 +16,7 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = \
-        'mysql+pymysql://root:k2931718@localhost:3306/cactus_develop'
+        'mysql+pymysql://root:k2931718@localhost:3306/cactus_develop?charset=utf8mb4'
 
 
 class TestingConfig(Config):

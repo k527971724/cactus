@@ -5,7 +5,7 @@ from . import db
 class Article(db.Model):
     __tablename__ = "articles"
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(40))
+    title = db.Column(db.String(80))
     body = db.Column(db.Text)
     body_html = db.Column(db.Text)
     recommend01 = db.Column(db.Integer)
